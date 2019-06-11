@@ -1,0 +1,536 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>ICSD-aegean</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/simple_menu.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/nivo-slider.css">
+<link rel="stylesheet" type="text/css" href="css/style6.css">
+<!-- Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+<!--JS FILES STARTS-->
+<script src="js/jquery.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/slides/slides.min.jquery.js"></script>
+<script src="js/cycle-slider/cycle.js"></script>
+<script src="js/nivo-slider/jquery.nivo.slider.js"></script>
+<script src="js/tabify/jquery.tabify.js"></script>
+<script src="js/prettyPhoto/jquery.prettyPhoto.js"></script>
+<script src="js/twitter/jquery.tweet.js"></script>
+<script src="js/scrolltop/scrolltopcontrol.js"></script>
+<script src="js/portfolio/filterable.js"></script>
+<script src="js/kwicks/jquery.kwicks-1.5.1.pack.js"></script>
+<!-- get fancybox -->
+<link rel="stylesheet" type="text/css" itemprop="javascript" href="js/fancybox/jquery.fancybox.css" media="all">
+<script src="js/fancybox/jquery.fancybox-1.2.1.js"></script>
+<!-- show date -->
+<SCRIPT language=JavaScript>
+	function Today()
+	{
+		var date = new Date();
+		var days = new Array("Κυριακή","Δευτέρα","Τρίτη","Τετάρτη","Πέμπτη","Παρασκευή","Σάββατο")
+		var months = new Array("Ιανουαρίου","Φεβρουαρίου","Μαρτίου","Απριλίου","Μαϊου","Ιουνίου","Ιουλίου","Αυγούστου","Σεπτεμβρίου","Οκτωβρίου","Νοεμβρίου","Δεκεμβρίου")
+
+		var d = date.getDay();
+		var m = date.getMonth();
+		var y = date.getYear().toString();
+
+		var date = date.getDate();
+		var day = days[d];
+		var month = months[m];
+
+
+		var Today = day + ", " + date + " " + month + " 20" + y.substring(y.length-2, y.length);
+
+		return Today;
+	}
+
+	function setPoly()
+	{
+		document.langForm.lang.value="poly";
+		document.langForm.submit();
+	}
+
+	function setMono()
+	{
+		document.langForm.lang.value="mono";
+		document.langForm.submit();
+	}
+</SCRIPT>
+</head>
+
+<body>
+
+<!-- top menu -->
+<div id="menu_top_bg">
+ <div style="width:1100px; margin: auto;" align="center">
+  <div class="one-third" style="margin: 7px">
+   <a href="http://www.aegean.gr/" target="_blank">
+    <img src="img/aegean.gif" alt="">
+   </a>
+   <br>
+   <font color="#ffffff"><b>ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΙΓΑΙΟΥ</b></font>
+  </div> 
+   <h1><font color="#ffffff" size="4"><strong>Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων</strong></font></h1>
+   <b> <font color="#ffffff">
+	   ΣΧΟΛΗ ΘΕΤΙΚΩΝ ΕΠΙΣΤΗΜΩΝ</font>
+   </b>
+   <br>
+   <font color="#ffffff" style="font-size: 7pt">(ένταξη σε ΠΟΛΥΤΕΧΝΙΚΗ ΣΧΟΛΗ με βάση απόφαση του ΣΑΠΕ το 2009,αναμένεται έκδοση ΦΕΚ)
+   </font>
+   <br>
+   <tr>
+       <script language=javascript>
+		document.write("<b><font size=2 color=#ff6600></b>"+"ΚΑΡΛΟΒΑΣΙ, ΣΑΜΟΣ - ");
+		document.write(Today());
+		document.write("</font>");
+	   </script>
+   </tr>
+ </div> 
+</div> 
+ 
+<!-- Dynamic Menu -->
+<div class="header" align="center">
+  <ul id="menu">
+    <li><a href="index.html">Home</a></li>
+	<li rel="icsd_aegean"><a href="#">Πληροφοριες</a>
+     <ol>
+      <li><a href="http://www.icsd.aegean.gr/icsd/plirofories/antikeimeno-stoxos.php">Περιγραφή Τμήματος</a></li>
+      <li><a href="http://www.icsd.aegean.gr/icsd/downloads/2013/ICSD_UoAEGEAN_EXT_EVAL_REPORT_2014.pdf">Έκθεση Εξωτερικής Αξιολόγησης του Τμήματος (Δεκέμβριος 2013)</a></li>
+      <li><a href="http://www.icsd.aegean.gr/icsd/downloads/2016/FINAL%20REPORT_UoA.PDF">Έκθεση Εξωτερικής Αξιολόγησης Πανεπιστημίου Αιγαίου (Ιανουάριος 2016)</a></li>
+      <li><a href="http://www.icsd.aegean.gr/icsd/apofoitoi/apokatastasi.php">Επαγγελματική Αποκατάσταση Αποφοίτων</a></li>
+      <li><a href="http://www.icsd.aegean.gr/icsd/downloads/2013/AEGEAN_ICSED_2013_ALUMNI_FINAL.pdf">Αποτελέσματα έρευνας για την επαγγελματική αποκατάσταση των αποφοίτων του Τμήματος</a></li>
+      <li><a href="http://www.icsd.aegean.gr/icsd/plirofories/calendar.php">Ακαδημαϊκό Ημερολόγιο</a></li>
+      <li><a href="http://www.icsd.aegean.gr/website_files/grammateia_files/announcements/323722488.pdf">Κατατακτήριες Εξετάσεις 2015 - 2016</a></li>
+      <li><a href="http://www.icsd.aegean.gr/forms/form_announcement.php?id=18">Σπουδές Erasmus</a></li>
+      <li><a href="http://www.icsd.aegean.gr/icsd/icsd/downloads/2015/epitropes_tmimatos_2014%202015.pdf">Επιτροπές τμήματος</a></li>
+      <li><a href="http://www.aegean.gr/counselling/">Συμβουλευτικός σταθμός</a></li>
+     </ol>
+    </li>​
+    <li rel="references"><a href="#">Προσωπικο</a>
+     <ol>
+       <li><a href="http://www.icsd.aegean.gr/icsd/prosopiko/members.php?category=dep">Μέλη ΔΕΠ</a></li>
+       <li><a href="http://www.icsd.aegean.gr/icsd/prosopiko/members.php?category=pd407">Διδάσκοντες (ΠΔ407/80)</a></li>
+       <li><a href="/http://www.icsd.aegean.gr/icsd/prosopiko/members.php?category=other">Λοιποί Διδάσκοντες</a></li>
+       <li><a href="http://www.icsd.aegean.gr/icsd/prosopiko/members.php?category=eedip">Μέλη ΕΕΔΙΠ</a></li>
+       <li><a href="http://www.icsd.aegean.gr/icsd/prosopiko/members.php?category=etep">Μέλη ΕΤΕΠ</a></li>
+     </ol>
+    </li>
+    <li rel="dioikisi"><a href="http://www.icsd.aegean.gr/icsd/prosopiko/dioikitiko_prosopiko.php">Διοικηση</a></li>
+    <li rel="ereuna"><a href="#">Ερευνα</a>
+     <ol>
+      <li><a href="http://www.icsd.aegean.gr/icsd/ereuna/ereunitikes_omades.php">Ερευνητικές ομάδες</a></li>
+      <li><a href="http://www.icsd.aegean.gr/icsd/ereuna/drastiriotites_didaskonton.php">Δραστηριότητες Διδασκόντων</a></li>
+      <li><a href="#">Εργαστήρια</a>
+        <ol>
+         <li><a target="_blank" href="http://www.icsd.aegean.gr/info-sec-lab/">Info-Sec-Lab</a></li>
+         <li><a target="_blank" href="http://www.icsd.aegean.gr/is-lab/">Is-Lab</a></li>
+         <li><a target="_blank" href="http://www.icsd.aegean.gr/ai-lab/">Ai-Lab</a></li>
+         <li><a target="_blank" href="http://www.icsd.aegean.gr/ccsl/">CCSL-Lab</a></li>
+         <li><a target="_blank" href="http://www.icsd.aegean.gr/ltc/">Ltc</a></li>
+        </ol>
+       </li>
+     </ol>
+    </li>
+    <li rel="proptixiaka"><a href="#">Προπτυχιακο</a>
+     <ol>
+      <li><a target="_blank" href="http://www.icsd.aegean.gr/website_files/grammateia_files/announcements/508186978.pdf">Οδηγός Σπουδών 2015-2016</a></li>
+	  <li><a target="_blank" href="http://www.icsd.aegean.gr/downloads/2015/%CE%9C%CE%A0%CE%95%CE%A3_%CE%9D%CE%95%CE%9F_%CE%A0%CE%A1%CE%9F%CE%A0%CE%A4%CE%A5%CE%A7%CE%99%CE%91%CE%9A%CE%9F.pdf">ΝΕΟ ΠΡΟΠΤΥΧΙΑΚΟ ΠΡΟΓΡΑΜΜΑ Σπουδών 2015</a></li>
+	  <li><a target="_blank" href="http://www.icsd.aegean.gr/downloads/2015/%CE%9C%CE%A0%CE%95%CE%A3_%CE%A3%CE%A0%CE%9F%CE%A5%CE%94%CE%95%CE%A3.pdf">Οι Σπουδές …με νούμερα!</a></li>
+      <li><a href="http://www.icsd.aegean.gr/icsd/proptyxiaka/mathimata_ana_examino.php">Μαθήματα ανα Εξάμηνο</a></li>
+      <li><a href="http://www.icsd.aegean.gr/icsd/proptyxiaka/ili_ana_examino.php">Ύλη μαθημάτων - Μαθησιακά Αποτελέσματα</a></li>
+      <!-- 
+      <li><a target="_blank" href="/icsd/downloads/2013/odigoi_spoudon/AEGEAN_ODHGOS_SPOUDWN_PPS_2013_2014_Greek_FINAL.pdf">Ύλη μαθημάτων</a></li> 
+      -->
+      <li><a href="http://www.icsd.aegean.gr/icsd/proptyxiaka/istoselides_mathimaton.php">Ιστοσελίδες Μαθημάτων</a></li>
+      <!--
+      <li><a target=_blank href="/icsd/proptyxiaka/Diplwmatikes_PPS_2010-2011.html">Θέματα Διπλωματικών Εργασιών</a></li>
+      -->
+      <li><a target="_blank" href="https://icarus-icsd.aegean.gr">Σύστημα Ενημέρωσης Φοιτητών - Icarus</a></li>
+      <li><a href="http://www.icsd.aegean.gr/icsd/proptyxiaka/diplomatikes.php">Ολοκληρωμένες Διπλωματικές Εργασίες</a></li>
+      <!--
+      <li><a target=_blank href="#">Επιλεγμένες Διπλωματικές Εργασίες</a></li>
+      -->
+      <!-- 
+      <li><a target=_blank href="http://www.aegean.gr/2008/default2009.htm">Υποδοχή Πρωτοετών</a></li> 
+      -->
+      <!--
+      <li><a href="http://www.javascriptkit.com/domref/">Εργαστήρια</a></li>
+      <li><a href="http://www.javascriptkit.com/domref/"> Πληροφορίες Φοιτητών</a></li>
+      -->
+     </ol>
+    </li>
+    <li rel="metaptyxiaka"><a href="#">Μεταπτυχιακο</a>
+     <ol>
+      <li><a target="_blank" href="http://msc.icsd.aegean.gr">Νέο ΠΜΣ 2016-17</a></li>
+      <li><a href="#">ΠΜΣ 2016-17</a>
+       <ol>
+        <!-- 
+        <li><a target="_blank" href="/icsd/Downloads/2014/odigoi_spoudon/Programma_Metaptyxiakou_Gr_2014-15.pdf">Οδηγός Σπουδών 2014-2015</a></li> 
+        -->
+        <li><a target="_blank" href="https://nautilus.aegean.gr/files/procurement_1460436111_323_2016.pdf">Τεχνολογίες και Διοίκηση Πληροφοριακών και Επικοινωνιακών Συστημάτων</a></li>
+        <li><a target="_blank" href="https://nautilus.aegean.gr/files/procurement_1460435840_323_2016.pdf">Διδακτική Πληροφορικής και Επικοινωνιών</a></li>
+        <li><a target="_blank" href="https://nautilus.aegean.gr/files/procurement_1460435987_323_2016.pdf">Πληροφοριακά και Επικοινωνιακά Συστήματα</a></li>
+        <li><a target="_blank" href="https://nautilus.aegean.gr/files/procurement_1460442566_323_2016.pdf">Έρευνα στα Πληροφοριακά και Επικοινωνιακά Συστήματα</a></li>
+       </ol>
+      </li>
+      <!--
+      <li><a href="/icsd/metaptyxiaka/genika.php">Γενικά</a></li>
+      <li><a href="/icsd/metaptyxiaka/kateuthinseis.php">Κατευθύνσεις</a></li>
+      <li><a href="/icsd/metaptyxiaka/istoselides_mathimaton.php">Ιστοσελίδες Μαθημάτων</a></li>
+      -->
+      <li><a target="_blank" href="http://www.icsd.aegean.gr/icsd/Downloads/2014/SXEDIO_KANONISMOU_PMS_2014_2015_v2.pdf">Κανονισμός Σπουδών 2014-2015</a></li>
+      <li><a href="icsd/metaptyxiaka/diplomatikes_2014_2015.php">Θέματα Διπλωματικών Εργασιών</a></li>
+      <li><a href="http://www.icsd.aegean.gr/icsd/metaptyxiaka/diplomatikes.php">Ολοκληρωμένες Διπλωματικές Εργασίες</a></li>
+      <li><a href="http://www.icsd.aegean.gr/icsd/metaptyxiaka/phd_diplomatikes.php">Διδακτορικές διατριβές</a></li>
+      <!--
+      <li><a target=_blank href="#">Επιλεγμένες Διπλωματικές Εργασίες</a></li> 
+      -->
+      <!--
+      <li><a href="/icsd/metaptyxiaka/genika.php">Διευθ. Προγράμματος Μεταπτυχιακών Σπουδών</a></li>
+      -->
+     </ol>
+    </li>
+    <li rel="references"><a href="#">Φοιτητικες Δραστηριοτητες</a>
+     <ol>
+      <li><a href="http://www.icsd.aegean.gr/icsd/foitites/foititikos_sillogos.php">Φοιτητικός Σύλλογος</a></li>
+      <li><a target=_blank href="http://foss.math.aegean.gr">Κοινότητα Ελεύθερου Λογισμικού (ΕΛ/ΛΑΚ)</a></li>
+      <li><a href="http://www.icsd.aegean.gr/icsd/foitites/ieee.php">IEEE Aegean Student Branch</a></li>
+      <li><a href="#">Αθλητικές Ομάδες</a> 
+       <ol>
+        <li><a target="_blank" href="http://www.samos.aegean.gr/football/">Ποδόσφαιρο</a></li>
+        <li><a target="_blank" href="http://www.icsd.aegean.gr/icsd/foitites/omades/pingpong.pdf">Πινγκ Πονγκ</a></li>
+       </ol>
+      </li>
+      <li><a href="#">Καλιτεχνικές Ομάδες</a> 
+       <ol>
+        <li><a target="_blank" href="http://www.icsd.aegean.gr/icsd/foitites/omades/xoreutiki_omada.pdf">Χορός</a></li>
+        <li><a target="_blank" href="http://www.icsd.aegean.gr/icsd/foitites/omades/irida.pdf">Κινηματογράφος</a></li>
+        <li><a target="_blank" href="http://www.icsd.aegean.gr/icsd/foitites/omades/musicteam_01.pdf">Μουσική</a></li>
+       </ol>
+      </li>
+	  <li><a target=_blank href="http://my.aegean.gr/web/">Η Φοιτητική - Δικτυακή Πύλη</a> </li>
+	 </ol>
+    </li> 
+    <li rel="ipiresies"><a href="#">Υπηρεσιες</a>
+     <ol>
+      <li><a target="_blank" href="http://www.lib.aegean.gr">Φοιτητική Μέριμνα</a>
+       <ol>
+        <!-- 
+        <li><a target="_blank" href="/icsd/Downloads/2008/foititiki_merimna.pdf">Χρήσιμες Πληροφορίες</a></li> 
+        -->
+        <li><a target="_blank" href="https://web-sthe.aegean.gr/esties-report/">Αναφορά τεχνικών προβλημάτων ΦΚ Σάμου</a></li>
+        <li><a target="_blank" href="/icsd/downloads/2010/Programma_Sitisis.xls">Πρόγραμμα Σίτισης</a></li>
+        <li><a target="_blank" href="http://www.icsd.aegean.gr/icsd/downloads/2013/astiki_Karlobasoy_2013-09.pdf">Δρομολόγια Λεωφορείων</a></li>
+       </ol>
+      </li>
+      <li><a target="_blank" href="http://www.lib.aegean.gr">Βιβλιοθήκη</a></li>
+      <li><a target="_blank" href="http://webmail.aegean.gr">Web Mail</a></li>
+      <li><a target="_blank" href="http://my.aegean.gr/web/userinfo-Symvouleutikos-Stathmos.html">Συμβουλευτικός Σταθμός Πανεπιστημίου Αιγαίου</a></li>
+      <li><a target="_blank" href="http://www.facebook.com/pages/%CE%93%CE%A1%CE%91%CE%A6%CE%95%CE%99%CE%9F-%CE%94%CE%99%CE%91%CE%A3%CE%A5%CE%9D%CE%94%CE%95%CE%A3%CE%97%CE%A3-%CE%A0%CE%B1%CE%BD%CE%B5%CF%80%CE%B9%CF%83%CF%84%CE%AE%CE%BC%CE%B9%CE%BF-%CE%91%CE%B9%CE%B3%CE%B1%CE%AF%CE%BF%CF%85/198800923486505">Γραφείο Διασύνδεσης</a></li>
+      <li><a target="_blank" href="http://www.samos.aegean.gr/noc">Κέντρο Πληροφορικής</a></li>
+      <li><a target="_blank" href="http://forum.aegean.gr/">Aegean Forum</a></li>
+      <li><a target="_blank" href="http://www.icsd.aegean.gr/alumni">Ιστοσελίδα Αποφοίτων - Alumni</a></li>
+      <li><a target="_blank" href="http://www.icsd.aegean.gr/octopus">Σύστημα Πρόσβασης Διδασκόντων</a></li>
+      <li><a target="_blank" href="http://telephony.aegean.gr/directory">Τηλεφωνικός Κατάλογος Πανεπιστημίου Αιγαίου</a></li>
+     </ol>
+    </li>
+    <li class="last" rel="plirofories"><a href="http://www.icsd.aegean.gr/icsd/epikoinonia.php">Επικοινωνια</a>
+     <ol>
+      <!--
+      <li><a href="/icsd/plirofories/antikeimeno-stoxos.php">Περιγραφή Τμήματος</a></li>
+      <li><a href="/icsd/plirofories/samos-genika.php">Πληροφορίες για τη Σάμο</a></li>
+      <li><a href="/icsd/plirofories/calendar.php">Ακαδημαϊκό Ημερολόγιο</a></li>
+      <li><a target="_blank" href="http://www.icsd.aegean.gr/Downloads/2008/foititiki_merimna.pdf">Φοιτητική Μέριμνα</a></li>
+      <li><a target="_blank" href="http://www.icsd.aegean.gr/Downloads/2009/KATATAKTHRIES_2009-2010.doc">Κατατακτήριες Εξετάσεις</a></li>
+      <li><a target="_blank" href="http://www.icsd.aegean.gr/Downloads/2009/egkyklios_metegrafon.PDF">Εγκύκλιος Μετεγγραφών</a></li>
+      -->
+      <li><a href="http://www.icsd.aegean.gr/icsd/plirofories/sindesmoi.php">Σύνδεσμοι</a></li>
+     </ol>
+    </li>​
+  </ul>  
+</div>
+
+<!-- Container -->
+<div id="container">
+
+  <!-- slider -->
+  <div class="two-third">
+    <div id="slider3" class="nivoSlider" style="width: 630px; height: 400px" title="Δραστηριότητες Τμήματος"> 
+	 <a href="http://www.icsd.aegean.gr/zosamo.php" target="_blank">
+	  <img title="Δραστηριότητες Τμήματος" src="img/slides1.jpg" alt="" width="630" height="280">
+	 </a> 
+	 <img href="http://www.icsd.aegean.gr/zosamo.php" src="img/slides2.jpg" alt="" width="630" height="280"> 
+	 <img href="http://www.icsd.aegean.gr/zosamo.php" src="img/slides3.jpg" alt="" width="630" height="280"> 
+	</div>
+    <div style="clear:both"></div>
+  </div>
+  
+  <!-- sidebar_right -->
+  <div class="sidebar_right">
+    <ul id="tabify_menu" class="menu_tab">
+      <li class="active"><a href="#fane1">Επικαιρότητα</a></li>
+      <li><a href="#fane2">Συνέδρια</a></li>
+      <li><a href="#fane3">Labs</a></li>
+	  <li><a href="#fane4">Video</a></li>
+    </ul>
+	<!-- epikairotita -->
+    <div id="fane1" class="tab_content">
+      <div class="tab_article">
+	  <a href="http://www.icsd.aegean.gr/forms/form_announcement.php?id=382" target="_blank"> 
+        <p><b> 06-04-2016: Ανακοίνωση </b><br>
+         Full funded Ph.D. position on Energy Harvesting for 5G at Imperial College London based in Toshiba Labs in Bristol
+        </p>
+	  </a>
+      </div>
+      <div class="tab_article">
+	   <a href="http://www.icsd.aegean.gr/icsd/forms/form_announcement.php?id=381" target="_blank"> 
+        <p><b> 06-04-2016: Ανακοίνωση </b> <br>
+          1 Postdoctoral position in System Security
+        </p>
+	   </a>	
+      </div>
+	  <div class="tab_article">
+	   <a href="http://www.icsd.aegean.gr/website_files/grammateia_files/announcements/729083221.pdf" target="_blank">
+	    <p><b> 24-03-2016: Ανακοίνωση </b> <br>
+		 2ο Πανελλήνιο Συνεδρίο, με Διεθνή Συμμετοχή, για την Προώθηση της Εκπαιδευτικής Καινοτομίας
+	    </p>
+	   </a>
+	  </div>
+	  <div class="tab_article">
+	   <a href="http://www.icsd.aegean.gr/forms/form_announcement.php?id=364" target="_blank">
+	    <p><b>04-12-2015: Ανακοίνωση του Τμήματος </b> <br>
+		 Διεθνές συνέδριο ασφάλειας Security BSides Athens 2016
+		 </p>
+		</a>
+	  </div>
+      <div class="tab_article">
+	   <a href="http://www.icsd.aegean.gr/icsd/forms/form_announcement.php?id=380" target="_blank"> 
+        <p><b> 06-04-2016: Ανακοίνωση </b> <br>
+         1 PhD position in Cyber-Physical System Security - KULeuven, Belgium
+        </p>
+	   </a>
+      </div>
+    </div>
+    <!-- sunedria -->
+	<div id="fane2" class="tab_content">
+      <div class="tab_article">
+	   <a href="http://ict-2016.org/"  target="_blank" >
+	    <p><b> ICT 2016 </b> <br>
+         23rd International Conference on Telecommunications <br>
+         16-18 May 2016, Thessaloniki, Greece
+	    </p>
+	   </a>
+	  </div>
+      <div class="tab_article">
+       <a href="http://icc2016.ieee-icc.org/"  target="_blank">
+        <p><b> IEEE ICC 2016 </b> <br>
+         IEEE International Conference on Communications <br>
+         23-27 May 2016, Kuala Lumpur, Malaysia
+        </p>
+       </a>		
+	  </div>
+	  <div class="tab_article">
+	   <a href="http://www.temu.gr/" target="_blank">
+	    <p><b>TEMU 2016 </b> <br> 
+         International Conference on Telecommunications & Multimedia <br>
+         25-27 July 2016, Heraklion, Crete, Greece
+        </p>
+	   </a>
+	  </div>
+	  <div class="tab_article">
+	   <a href="http://trust.csu.edu.cn/conference/SpaCCS2016/" target="_blank">
+	    <p><b> SpaCCS 2016 </b> <br>
+	     The 9th International Conference on Security, Privacy and Anonymity in Computation, Communication and Storage <br>
+         16-18 Nov, 2016, Zhangjiajie, China
+	    </p>
+	   </a>
+	  </div>
+    </div>
+	<!-- Labs -->
+	<div id="fane3" class="tab_content">
+	  <div class="tab_article">
+	   <a href="http://www.icsd.aegean.gr/group/index.php?group=L1" target="_blank">
+	    <p><b>Information & Communication Systems Security</b> </p>
+	   </a>
+      </div>
+	  <div class="tab_article">
+	   <a href="http://www.icsd.aegean.gr/is-lab/" target="_blank">
+	    <p><b>Information Systems</b> </p>
+	   </a>
+	  </div>
+	  <div class="tab_article">
+	   <a href="http://www.icsd.aegean.gr/is-lab/" target="_blank">
+	    <p><b>Artificial Intelligence</b> </p>
+	   </a>
+	  </div>
+	  <div class="tab_article">
+	   <a href="http://samosweb.aegean.gr/ccsl/" target="_blank">
+	    <p><b>Computer & Communication Systems </b></p>
+	   </a>
+	  </div>
+	  <div class="tab_article">
+	   <a href="http://www.icsd.aegean.gr/group/index.php?group=L5" target="_blank">
+	    <p><b>Geometry, Dynamical Systems & Cosmology </b></p>
+	   </a>
+	 </div>
+	</div>
+	<!-- Video -->
+	<div id="fane4" class="tab_content">
+	  <div class="tab_article">
+	   <a href="http://www.aegean.gr/video/" target="_blank">
+	    <img src="img/aegean_video.png" alt="" width="170" height="170" style="margin:0 50px">
+	   </a>
+	  </div>
+	</div>
+  </div>
+  
+  <!-- Metaptyxiaka -->
+  <a target="_blank" href="http://msc.icsd.aegean.gr/">
+	<img src="img/metaptyxiaka.gif" style="width:950px; height:110px;">
+  </a>
+  <div style="clear:both; height: 20px"></div> 
+ 
+  <!-- Ηλεκτρονικές Υπηρεσίες --> 
+  <h3><u><b>Ηλεκτρονικές Υπηρεσίες</b></u></h3>
+  <ul class="ca-menu">
+    <li> <a target="_blank" href="http://eclass.icsd.aegean.gr"> <span class="ca-icon"><img src="img/eclass.gif"></span>
+      <div class="ca-content">
+        <h2 class="ca-main">E-class</h2>
+      </div>
+      </a> </li>
+    <li> <a target="_blank" href="http://webmail.aegean.gr"> <span class="ca-icon"><img src="img/webmail.jpg"></span>
+      <div class="ca-content">
+        <h2 class="ca-main">Webmail</h2>
+      </div>
+      </a> </li>
+    <li> <a target="_blank" href="http://icarus-icsd.aegean.gr"> <span class="ca-icon"><img src="img/icarus.jpg"></span>
+      <div class="ca-content">
+        <h2 class="ca-main">Icarus</h2>
+      </div>
+      </a> </li>
+    <li> <a target="_blank" href="http://www.eudoxus.gr"> <span class="ca-icon"><img src="img/eudoxus.png"></span>
+      <div class="ca-content">
+	    <h2 class="ca-main">Εύδοξος</h2>
+      </div>
+      </a> </li>
+    <li> <a target="_blank" href="http://milc.samos.aegean.gr"> <span class="ca-icon"><img src="img/milc.png"></span>
+      <div class="ca-content">
+	    <h2 class="ca-main">M.I.L.C.</h2>
+      </div>
+      </a> </li>
+    <li> <a target="_blank" href="https://okeanos.grnet.gr/home/"> <span class="ca-icon"><img src="img/okeanos.jpg"></span>
+      <div class="ca-content">
+	    <h2 class="ca-main">OKEANOS</h2>
+      </div>
+      </a> </li>
+    <li> <a target="_blank" href="http://atlas.grnet.gr/"> <span class="ca-icon"><img src="img/atlas.png"></span>
+      <div class="ca-content">
+	    <h2 class="ca-main">ΑΤΛΑΣ</h2>
+      </div>
+      </a> </li>	  
+  </ul>
+  <div style="clear:both; height: 40px"></div> 
+
+  <!-- foititika -->  
+  <div class="header2 two-third">
+    <h3><b style="color: #ffffff">Φοιτητικά</b></h3>
+  </div>
+  <a style="margin-left: 60px;" target="_blank" href="http://startmeup.lamezor.com/"><img src="img/strtmpfinal.png"></a>
+   <div class="one-third header3">
+    <h4>Προπτυχιακό Πρόγραμμα Σπουδών</h4>
+    <ul style="margin:10px">
+      <li style="border-bottom: 1px solid #2e2e38;"><a href="http://www.icsd.aegean.gr/website_files/grammateia_files/announcements/508186978.pdf">Οδηγος Σπουδών για Προπτυχιακές Σπουδές 2015 - 2016</a></li>
+      <li style="border-bottom: 1px solid #2e2e38;"><a href="http://www.icsd.aegean.gr/website_files/grammateia_files/announcements/40257691.pdf">Ωρολόγιο Πρόγραμμα Προπτυχιακών Σπουδών Εαρινού Εξαμήνου Ακ. Έτους 2015-16</a></li>
+      <li style="border-bottom: 1px solid #2e2e38;"><a href="http://www.icsd.aegean.gr/icsd/proptyxiaka/Diplwmatikes_PPS_2014-2015.html">Διπλωματικές Εργασίες 2014 - 2015</a></li>
+      <li style="border-bottom: 1px solid #2e2e38;"><a href="http://www.icsd.aegean.gr/icsd/proptyxiaka/Diplwmatikes_PPS_2015-2016.html">Διπλωματικές Εργασίες 2015 - 2016</a></li>
+      <li style="border-bottom: 1px solid #2e2e38;"><a href="https://submit-academicid.minedu.gov.gr/">Ηλεκτρονική Υπηρεσία Απόκτησης Δελτίου Ειδικού Εισιτηρίου</a></li>
+    </ul>
+      <h4>Απόφοιτοι</h4>
+        <ul style="margin:10px">
+          <li style="border-bottom: 1px solid #2e2e38;"><font>
+            <a href="http://www.icsd.aegean.gr/icsd/apofoitoi/apokatastasi.php">
+              Επαγγελματική Αποκατάσταση Αποφοίτων</a></font></li>
+          <!-- 
+		  <li style="border-bottom: 1px solid #2e2e38;">
+            <a href="http://www.icsd.aegean.gr/alumni">
+              Ιστοσελίδα Αποφοίτων - Alumni</a></li> -->
+        </ul>	
+   </div>
+   <div class="one-third header3">
+    <h4>Μεταπτυχιακό Πρόγραμμα Σπουδών</h4>
+    <ul style="margin:10px" id="frontpage">
+      <li style="border-bottom: 1px solid #2e2e38;"><a target="_blank" href="http://msc.icsd.aegean.gr/">Μεταπτυχιακών Σπουδών 2016-17</a></li>
+	  <p><u> Κανονισμοί Σπουδών ΠΜΣ </u></p>
+	  <ul style="padding: 0 22px 13px;">
+       <li style="border-bottom: 1px solid #2e2e38;"><a target="_blank" href="http://www.icsd.aegean.gr/downloads/2016/SXEDIO_KANONISMOU_PMS_%CE%9A%CE%91%CE%A41-5_2015_2016_v0.pdf">Τεχνολογίες και Διοίκηση Πληροφοριακών και Επικοινωνιακών Συστημάτων</a></li>
+       <li style="border-bottom: 1px solid #2e2e38;"><a target="_blank" href="http://www.icsd.aegean.gr/downloads/2016/SXEDIO_KANONISMOU_PMS_conversion_2015_2016_v0.pdf">Διδακτική Πληροφορικής και Επικοινωνιών</a></li>
+       <li style="border-bottom: 1px solid #2e2e38;"><a target="_blank" href="http://www.icsd.aegean.gr/downloads/2016/SXEDIO_KANONISMOU_PMS_RESEARCH_2015_2016_v0.pdf">Έρευνα στα Πληροφοριακά και Επικοινωνιακά Συστήματα</a></li>
+	  </ul>
+      <li style="border-bottom: 1px solid #2e2e38;"><a href="http://www.icsd.aegean.gr/icsd/metaptyxiaka/diplomatikes_2014_2015.php">Διπλωματικές Εργασίες 2014 - 2015</a></li>
+      <li style="border-bottom: 1px solid #2e2e38;"><a target="_blank" href="https://submit-academicid.minedu.gov.gr/">Ηλεκτρονική Υπηρεσία Απόκτησης Δελτίου Ειδικού Εισιτηρίου</a></li>
+    </ul> 
+   </div>
+   <div class="one-third last">
+   <div style="clear:both; height: 20px"></div>
+   <a style="margin-left: 70px;" target="_blank" href="http://www.ru.aegean.gr/YPATIA"><img src="img/ypatia.png"></a>
+   <div style="clear:both; height: 20px"></div>
+   <div  style="margin-left: 50px; background:#ccccf0; border-radius: 7px;" width="100%" align="center">
+    <tr>
+        <td>Σάμος</td>
+    </tr>
+	<tr>
+	  <td>
+       <img style="border: 2px solid #000999" src="img/samos_map.gif">
+      </td>
+	</tr>
+    <tr>
+       <td>
+            <ul>		
+                <li style="border-bottom: 2px solid #fff;"><a href="http://www.icsd.aegean.gr/icsd/plirofories/samos-genika.php#map">
+                        Χάρτης Σάμου</a></li>
+
+                <li style="border-bottom: 2px solid #fff"><a href="http://www.icsd.aegean.gr/icsd/plirofories/samos-genika.php#istoria">
+                        Ιστορία Σάμου</a></li>
+
+                <li style="border-bottom: 2px solid #fff"><a href="http://www.icsd.aegean.gr/icsd/plirofories/samos-karlovasi.php">
+                        Καρλόβασι</a></li>
+            </ul>
+       </td>
+    </tr>
+    <tr>
+        <td colspan=4 align="center" >&nbsp;</td>
+    </tr>
+   </div>
+  </div>    
+</div>	
+<div style="clear:both; height: 40px"></div>
+
+<!-- Footer -->
+<div id="footer">
+   <div style="width:1100px; margin: auto;" align="center">
+     <span style="text-transform: uppercase">
+     <font face="Verdana" size="2" color="#ffffff">πανεπιστημιο αιγαιου</font></span>
+	 <br>
+     <span style="text-transform: uppercase">
+     <font face="Verdana" size="2" color="#ffffff"> 
+     ΣΧΟΛΗ ΘΕΤΙΚΩΝ ΕΠΙΣΤΗΜΩΝ</font></span>
+	 <font face="Verdana" size="1" color="#ffffff"> (ένταξη σε ΠΟΛΥΤΕΧΝΙΚΗ ΣΧΟΛΗ με βάση απόφαση του ΣΑΠΕ το 2009, αναμένεται έκδοση ΦΕΚ)
+     </font>
+     <br>
+	 <font face="Verdana" size="2" color="#ffffff">
+     <span style="text-transform: uppercase">τμημα μηχανικων πληροφοριακων
+     </span>
+     </font>
+     <span style="text-transform: uppercase"><font face="Verdana" size="2" color="#FF9933">& </font><font face="Verdana" size="2" color="#ffffff"> 
+     επικοινωνιακων συστηματων</font></span>
+	 <br>
+     <img border="0" src="img/epeaek.gif" width="508" height="77">
+	 <br>
+	 <font face="Verdana" size="-2px" color="#CCCC00">© Copyright ICSD :: 2008 - 2015</font>
+   </div>
+</div>
+
+</body>
+</html>
